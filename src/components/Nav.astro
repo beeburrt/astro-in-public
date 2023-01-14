@@ -1,12 +1,54 @@
 ---
 import { Icon } from "astro-icon";
+import Link from "./Link.astro";
 ---
 
 <nav aria-label="Primary">
   <div class="navbar">
-    <a href="/" araia-label="Go home">
+    <a href="/" class="logomark" aria-label="Go home">
       <Icon name="logomark" width="60" />
     </a>
-    <ul></ul>
+    <ul>
+      <li>
+        <Link
+          text="Home"
+          href="/"
+          style="secondary"
+          isFilled={false}
+          icon={{
+            name: "radix-icons:home",
+            side: "left",
+          }}
+        />
+      </li>
+      <li>
+        <Link
+          text="About"
+          href="/about"
+          style="secondary"
+          isFilled={false}
+          icon={{
+            name: "radix-icons:avatar",
+            side: "left",
+          }}
+        />
+      </li>
+      <li>
+        <Link
+          text="Blog"
+          href="/blog"
+          style="secondary"
+          isFilled={false}
+          icon={{
+            name: "radix-icons:pencil-2",
+            side: "left",
+          }}
+        />
+      </li>
+    </ul>
   </div>
 </nav>
+
+<script>
+  import "../js/nav.js";
+</script>
