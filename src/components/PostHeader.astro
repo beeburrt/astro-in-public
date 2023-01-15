@@ -11,7 +11,7 @@ const { category, title, author, date, image } = Astro.props;
     </small>
     <h1 class="h2">{title}</h1>
     <p>
-      by <a href={`/author/${author}/`}>{slugify(author)}</a> - {
+      by <a href={`/author/${slugify(author)}/`}>{author}</a> • {
         formatDate(date)
       }
     </p>

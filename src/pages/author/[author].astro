@@ -27,8 +27,8 @@ const { author } = Astro.params;
 const { posts, authorName } = Astro.props;
 ---
 
-<MainLayout title={authorName} aria-label={`Posts by ${authorName}`}>
-  <section class="container">
+<MainLayout title={authorName}>
+  <section class="container" aria-label={`Posts by ${authorName}`}>
     <h1 class="h1">Posts by <span>{authorName}</span></h1>
     <div class="post-container">
       {

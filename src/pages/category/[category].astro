@@ -34,8 +34,8 @@ const categoryPosts = formattedPosts.filter(
 );
 ---
 
-<MainLayout title={name} aria-label={`Posts about ${name}`}>
-  <section class="container">
+<MainLayout title={name}>
+  <section class="container" aria-label={`Posts about ${name}`}>
     <h1 class="h1">Posts about <span>{name}</span></h1>
     <div class="post-container">
       {
