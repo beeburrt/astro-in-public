@@ -1,0 +1,8 @@
+{
+  "title": "beeburrt's Blog",
+  "description": "Random musings about Web Development",
+  "image": {
+    "src": "/images/image-default.jpg",
+    "alt": "My Astro Blog"
+  }
+}

@@ -1,10 +1,19 @@
 ---
+import { Icon } from "astro-icon";
 ---
 
 <footer>
-  <small>
-    🄯 <span id="year"></span> Made with 🧡 by beeburrt.
-  </small>
+  <div>
+    <small>
+      🄯 <span id="year"></span> Made with 🧡 by beeburrt.
+    </small>
+    <small>
+      <a href="/rss.xml">
+        Subscribe to RSS
+        <Icon name="tabler:rss" width="20" height="20" />
+      </a>
+    </small>
+  </div>
 </footer>
 
 <script>
