@@ -22,7 +22,7 @@ const { showCount } = Astro.props;
   {
     Object.entries(reducedCategories).map(([key, val]) => (
       <li>
-        <a class="badge" href={`/category/${slugify(key)}`}>
+        <a class="badge" href={`/category/${slugify(key)}/`}>
           {key} {showCount && `(${val})`}
         </a>
       </li>
