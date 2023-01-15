@@ -8,7 +8,11 @@ import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [image({
-    serviceEntryPoint: "@astrojs/image/sharp"
-  }), sitemap()]
+  site: "https://astro-in-public.netlify.app",
+  integrations: [
+    image({
+      serviceEntryPoint: "@astrojs/image/sharp",
+    }),
+    sitemap(),
+  ],
 });
