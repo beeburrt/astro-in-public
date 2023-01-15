@@ -1,5 +1,6 @@
 ---
 import { Icon } from "astro-icon";
+import Counter from "./Counter";
 ---
 
 <footer>
@@ -7,6 +8,9 @@ import { Icon } from "astro-icon";
     <small>
       🄯 <span id="year"></span> Made with 🧡 by beeburrt.
     </small>
+    <div>
+      <Counter client:visible />
+    </div>
     <small>
       <a href="/rss.xml">
         Subscribe to RSS

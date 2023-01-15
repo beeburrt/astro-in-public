@@ -7,6 +7,9 @@ import image from "@astrojs/image";
 import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
+import partytown from "@astrojs/partytown";
+
+// https://astro.build/config
 export default defineConfig({
   site: "https://astro-in-public.netlify.app",
   integrations: [
@@ -14,5 +17,6 @@ export default defineConfig({
       serviceEntryPoint: "@astrojs/image/sharp",
     }),
     sitemap(),
+    partytown(),
   ],
 });
